@@ -1,18 +1,22 @@
 
-# Cine1895 Camera 🎬
+# Cine1895 Camera (Android MVP)
 
-Flutter-based on-set VFX camera app. Supports:
+**This build runs now.** It includes:
+- Camera preview (camera package)
+- Pick MP4 from gallery as overlay (file_picker + video_player)
+- Move/scale overlay with gestures
+- Opacity slider
+- Capture button:
+  - Camera-only OR composited capture (toggle)
 
-- Real-time camera preview
-- MP4 overlay (foreground/background)
-- Chroma key (with color picker + tolerance)
-- Overlay ON/OFF capture modes
+> Chroma key will be added next (GL shader).
 
-## Getting Started
+## Build
 
 ```bash
 flutter pub get
-flutter build apk
+flutter run        # for a quick test
+flutter build apk  # to produce an installable APK
 ```
 
-Developed under supervision for real-world VFX usage.
+Tested target: Android 10+.
